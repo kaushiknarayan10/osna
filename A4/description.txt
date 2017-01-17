@@ -1,0 +1,6 @@
+This program collects tweets which have the words'Hillary' or 'Trump' in them. The code for this is written in collect.py.
+Along with this, the Afinn data is also downloaded for sentiment analysis.
+In the cluster.py file, a graph is created between all of the users. The graph is then clustered using Girvan Newman until the edge with the highest weight is removed.
+In classify.py, the downloaded Afinn scores are used to weigh the sentiment of a tweet. On the whole, we find out whether users who used the word 'Trump' have more positive tweets than the users who used the word 'Hillary'. The results may surprise you.
+Finally, in the summarize.py file, all the outputs of the previous functions are taken and the values are written to a summary.txt file.
+Conclusion : The results from classify are surprising. The time taken to download 1000 tweets is roughly around 3 minutes.
